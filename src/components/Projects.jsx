@@ -23,7 +23,7 @@ export const projects = [
     title: '3D Endless Runner',
     description: 'A 3D Simple Video Game of an Endless Runner',
     image: 'projects/rfl.png',
-    url: "https://eloxpro.github.io/10MinutesSampleProject/Assets/Game.html",
+    url: "https://eloxpro.itch.io/3d-runner-demo",
   }
   ]
 
