@@ -17,7 +17,7 @@ export const projects = [
     title: 'Simple Portfolio',
     description: 'A Simple Website Portfolio ',
     image: 'projects/portifolio1.png',
-    url: "https://eloxpro.github.io/MyPortfolio/",
+    url: "https://eloxproject1.netlify.app/",
   },
   {
     title: '3D Endless Runner',
