@@ -17,13 +17,13 @@ export const projects = [
     title: 'Simple Portfolio',
     description: 'A Simple Website Portfolio ',
     image: 'projects/portifolio1.png',
-    url: "https://eloxpro.github.io/MyPortfolio/",
+    url: "https://eloxproject1.netlify.app/",
   },
   {
     title: '3D Endless Runner',
     description: 'A 3D Simple Video Game of an Endless Runner',
     image: 'projects/rfl.png',
-    url: "https://eloxpro.github.io/10MinutesSampleProject/Assets/Game.html",
+    url: "https://eloxpro.itch.io/3d-runner-demo",
   }
   ]
 
