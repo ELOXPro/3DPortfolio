@@ -22,6 +22,7 @@ export const Interface = (props) => {
       <AboutSection />
       <ProjectsSection />
       <ContactSection />
+      <SocialSection/>
     </div>
     </>
   )
@@ -406,29 +407,33 @@ const ContactSection = () =>{
           >
           {loading ? "Sending..." : "Send"}
           </button>
-          <button onClick={() => window.open("https://wa.me/250736575839?text=Hi%20I%20need%20a%20Service", "_blank")}>
-      <img src={"/textures/whatsapp.png"}
-            alt="whatsapp"
-            className="w-16 h-16 mr-2 hover:w-32 hover:h-32 transition-all"
-          />
-    </button>
-    <button onClick={() => window.open("https://ig.me/m/_e.l.o.x_", "_blank")}>
-      <img src={"/textures/instagram.png"}
-            alt="instagram"
-            className="w-16 h-16 mr-2 hover:w-32 hover:h-32 transition-all"
-          />
-    </button>
-    <button onClick={() => window.open("tel:+250-793-107356", "_blank")}>
-      <img src={"/textures/phonecall.png"}
-            alt="phonecall"
-            className="w-16 h-16 mr-2 hover:w-32 hover:h-32 transition-all"
-          />
-    </button>
         </div>
       </form>
-  </div>
-  <div className=" relative top-10   flex items-center justify-between">
-      </div>
+    </div>
   </motion.div>
- </Section>)
+ </Section>
+ )
+};
+const SocialSection = () =>{
+  return(
+  <div className="absolute bottom-5 items-center justify-center">
+  <button onClick={() => window.open("https://wa.me/250736575839?text=Hi%20I%20need%20a%20Service", "_blank")}>
+            <img src={"/textures/whatsapp.png"}
+             alt="whatsapp"
+             className="w-16 h-16 mr-2 hover:w-32 hover:h-32 transition-all"
+            />
+          </button>
+          <button onClick={() => window.open("https://ig.me/m/_e.l.o.x_", "_blank")}>
+            <img src={"/textures/instagram.png"}
+              alt="instagram"
+              className="w-16 h-16 mr-2 hover:w-32 hover:h-32 transition-all"
+            />
+          </button>
+          <button onClick={() => window.open("tel:+250-793-107356", "_blank")}>
+            <img src={"/textures/phonecall.png"}
+             alt="phonecall"
+             className="w-16 h-16 mr-2 hover:w-32 hover:h-32 transition-all"
+            />
+          </button>
+  </div>)
 };
