@@ -46,7 +46,7 @@ export const projects = [
       <group {...props}>
         <mesh
           position-z={-0.001}
-          onClick={() => window.open(project.url, "_blank")}
+          onClick={() => project.url != null ? window.open(project.url, "_blank"): alert("Project Still in Development Check My Social Media Accounts To Be Updated.")}
           ref={background}
         >
           <planeGeometry args={[2.2, 2]} />
