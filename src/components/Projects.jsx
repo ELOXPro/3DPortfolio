@@ -24,7 +24,13 @@ export const projects = [
     description: 'A 3D Simple Video Game of an Endless Runner',
     image: 'projects/rfl.png',
     url: "https://eloxpro.itch.io/3d-runner-demo",
-  }
+  },
+  {
+    title: 'OnPost Platform',
+    description: 'A Simple Social Media Platform',
+    image: 'projects/onpost.png',
+    url: "https://onpost.netlify.app/",
+  },
   ]
 
 
