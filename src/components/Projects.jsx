@@ -27,7 +27,7 @@ export const projects = [
   },
   {
     title: 'OnPost Platform',
-    description: 'A Simple Social Media Platform',
+    description: 'A Simple Clone Of Instagram Web Application',
     image: 'projects/onpost.png',
     url: "https://onpost.netlify.app/",
   },
