@@ -11,7 +11,7 @@ export const projects = [
     title: 'Castelo Platform',
     description: 'A web app that customize the colors on Shoes',
     image: 'projects/castelo.png',
-    url: null,
+    url: "https://castelo.netlify.app/",
   },
   {
     title: 'Simple Portfolio',

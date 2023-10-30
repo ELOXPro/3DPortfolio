@@ -46,8 +46,8 @@ const IntroSection = (props) =>{
       }
     }}
   >
-  <h1 className=" text-3xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500 w-96 md:w-2/4">Let Me Show You Around!</h1>
-  <p className="capitalize text-base md:text-xl text-white mt-2 md:mt-8 font-mono w-4/5 md:w-2/4">
+  <h1 className=" text-2xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500 w-full md:w-1/2">Let Me Show You Around!</h1>
+  <p className="capitalize text-sm md:text-xl text-white mt-2 md:mt-8 font-mono w-full md:w-1/2">
   Hello, I'm Eloi, an aspiring software developer with a strong passion for web applications, game development, and website design. While I'm relatively new to the industry, my dedication to learning and my drive for creativity are at the core of what I do.
   </p>
   <button  onClick={()=> setSection(5)}className="rounded-lg bg-blue-700 hover:bg-blue-500 text-base md:text-2xl mt-4 md:mt-8 text-white p-3 font-mono transition-colors">Contact Me</button>
@@ -99,7 +99,7 @@ const SkillsSection = () =>{
     <h2 className="text-base md:text-3xl font-bold text-blue-700">Skills</h2>
     <div className="mt-2 md:mt-4 space-y-0.5 md:space-y-2">
       {Skills.map((skill, index) =>(
-        <div className="w-1/2 md:w-full" key={index}>
+        <div className="w-3/4 md:w-full" key={index}>
           <motion.h3 className="text-sm md:text-xl font bold text-slate-400 font-mono"
           initial={{
             opacity: 0,
@@ -142,7 +142,7 @@ const SkillsSection = () =>{
     <h2 className="text-base md:text-3xl font-bold text-blue-700">Languages</h2>
     <div className="mt-4 space-y-2">
       {Languages.map((skill, index) =>(
-        <div className="w-1/2 md:w-full" key={index}>
+        <div className="w-3/4 md:w-full" key={index}>
           <motion.h3 className="text-sm md:text-xl font bold text-slate-400 font-mono"
           initial={{
             opacity: 0,
@@ -204,7 +204,7 @@ const AboutSection = () =>{
       }}
     >
     <h1 className="text-xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500">Who Am I?</h1>
-    <p className="capitalize text-sm md:text-xl text-white mt-2 md:mt-8 font-mono w-3/4 md:w-2/4">
+    <p className="capitalize text-sm md:text-xl text-white mt-2 md:mt-8 font-mono w-4/4 md:w-2/4">
     My Name is Eloi IRADUKUNDA but some call me Elox, I'm 19 years old. My journey as a budding software developer is guided by my belief in the power of experience and continuous improvement. Challenges are opportunities for growth, and I'm dedicated to honing my skills.
     I'm currently working on personal projects to apply my knowledge and demonstrate my potential.
     Beyond technology, I'm passionate about Video Games and Spending Time with People especially my friends and mates.
