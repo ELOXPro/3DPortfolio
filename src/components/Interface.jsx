@@ -263,7 +263,7 @@ const ProjectsSection = (props) => {
 const ContactSection = () =>{
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: "",
+    names: "",
     email: "",
     phone:"",
     message: "",
@@ -284,7 +284,7 @@ const ContactSection = () =>{
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    if (!form.name || !form.email || !form.phone || !form.message) {
+    if (!form.names || !form.email || !form.phone || !form.message) {
       alert("Please fill in all fields");
       return;
     }
@@ -296,7 +296,7 @@ const ContactSection = () =>{
         "elox_pro",
         "template_i7n355h",
         {
-          from_name: form.name,
+          from_name: form.names,
           to_name: "ELOX Pro",
           from_email: form.email,
           to_email: "iradeloi41@gmail.com",
@@ -311,7 +311,7 @@ const ContactSection = () =>{
           alert("Thank you. I will get back to you as soon as possible.");
   
           setForm({
-            name: "",
+            names: "",
             email: "",
             phone: "",
             message: "",
@@ -349,11 +349,10 @@ const ContactSection = () =>{
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
             Name
           </label>
-          <input 
+          <input
             className="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="name"
-            type="email"
-            name="name"
+            name="names"
             placeholder="Name"
             value={form.name}
             onChange={handleChange}
