@@ -22,7 +22,7 @@ export const Interface = (props) => {
       <AboutSection />
       <ProjectsSection />
       <ContactSection />
-      <SocialSection/>
+      <SocialSection />
     </div>
     </>
   )
@@ -46,9 +46,9 @@ const IntroSection = (props) =>{
       }
     }}
   >
-  <h1 className=" text-2xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500 w-full md:w-1/2">Let Me Show You Around!</h1>
+  <h1 className=" text-xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500 w-full md:w-1/2">Let Me Show You Around!</h1>
   <p className="capitalize text-sm md:text-xl text-white mt-2 md:mt-8 font-mono w-full md:w-1/2">
-  Hello, I'm Eloi, an aspiring software developer with a strong passion for web applications, game development, and website design. While I'm relatively new to the industry, my dedication to learning and my drive for creativity are at the core of what I do.
+    Hello, I'm Eloi, an aspiring software developer with a strong passion for web applications, game development and website design. While I'm relatively new to the industry, my dedication to learning and my drive for creativity are at the core of what I do.
   </p>
   <button  onClick={()=> setSection(5)}className="rounded-lg bg-blue-700 hover:bg-blue-500 text-base md:text-2xl mt-4 md:mt-8 text-white p-3 font-mono transition-colors">Contact Me</button>
   </motion.div>
@@ -57,11 +57,11 @@ const IntroSection = (props) =>{
 
 const Skills = [
   {
-    title: "ThreeJs (3D Web Applications)",
+    title: "Three-Js (3D Web Applications)",
     level: 70
   },
   {
-    title: "React Js (Web Applications)",
+    title: "React-Js (Web Applications)",
     level: 70
   },
   {
@@ -204,11 +204,11 @@ const AboutSection = () =>{
       }}
     >
     <h1 className="text-xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500">Who Am I?</h1>
-    <p className="capitalize text-sm md:text-xl text-white mt-2 md:mt-8 font-mono w-4/4 md:w-2/4">
-    My Name is Eloi IRADUKUNDA but some call me Elox, I'm 19 years old. My journey as a budding software developer is guided by my belief in the power of experience and continuous improvement. Challenges are opportunities for growth, and I'm dedicated to honing my skills.
-    I'm currently working on personal projects to apply my knowledge and demonstrate my potential.
-    Beyond technology, I'm passionate about Video Games and Spending Time with People especially my friends and mates.
-    Feel free to connect with me at contact me form or on other Social Media Platforms.
+    <p className="capitalize text-sm md:text-xl text-white mt-2 md:mt-8 font-mono w-full md:w-1/2">
+      My Name is Eloi IRADUKUNDA but some call me Elox, I'm 19 years old. My journey as a budding software developer is guided by my belief in the power of experience and continuous improvement. Challenges are opportunities for growth, and I'm dedicated to honing my skills.
+      I'm currently working on personal projects to apply my knowledge and demonstrate my potential.
+      Beyond technology, I'm passionate about Video Games and Spending Time with People especially my friends and mates.
+      Feel free to connect with me at contact me form or on other Social Media Platforms.
     </p>
     </motion.div>
    </Section>)
@@ -243,14 +243,14 @@ const ProjectsSection = (props) => {
       }}
       className="flex w-full h-full gap-2 relative top-64 md:top-36 items-center justify-center">
         <button
-          className="bg-white p-2 rounded-md font-bold hover:text-blue-400 transition-colors text-blue-700"
+          className="bg-white p-2 rounded-md font-bold md:hover:text-blue-400 transition-colors text-blue-700"
           onClick={previousProject}
         >
           Previous
         </button>
         <h2 className="text-sm md:text-3xl font-bold text-white text-center">Projects I have Worked On</h2>
         <button
-          className="bg-white px-5 py-2 rounded-md font-bold hover:text-blue-400 transition-colors text-blue-700"
+          className="bg-white px-5 py-2 rounded-md font-bold md:hover:text-blue-400 transition-colors text-blue-700"
           onClick={nextProject}
         >
           Next
@@ -351,7 +351,6 @@ const ContactSection = () =>{
           </label>
           <input
             className="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            type="text"
             id="name"
             name="name"
             placeholder="Name"
@@ -402,7 +401,7 @@ const ContactSection = () =>{
         </div>
         <div className="flex items-center justify-between">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2 md:px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-blue-500 md:hover:bg-blue-700 text-white font-bold py-2 px-2 md:px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
           {loading ? "Sending..." : "Send"}
@@ -420,19 +419,19 @@ const SocialSection = () =>{
   <button onClick={() => window.open("https://wa.me/250736575839?text=Hi%20I%20need%20a%20Service", "_blank")}>
             <img src={"/textures/whatsapp.png"}
              alt="whatsapp"
-             className="w-16 h-16 mr-2 hover:w-32 hover:h-32 transition-all"
+             className="w-16 h-16 mr-2 md:hover:w-32 md:hover:h-32 transition-all"
             />
           </button>
           <button onClick={() => window.open("https://ig.me/m/_e.l.o.x_", "_blank")}>
             <img src={"/textures/instagram.png"}
               alt="instagram"
-              className="w-16 h-16 mr-2 hover:w-32 hover:h-32 transition-all"
+              className="w-16 h-16 mr-2 hover:w-32 md:hover:h-32 transition-all"
             />
           </button>
           <button onClick={() => window.open("tel:+250-793-107356", "_blank")}>
             <img src={"/textures/phonecall.png"}
              alt="phonecall"
-             className="w-16 h-16 mr-2 hover:w-32 hover:h-32 transition-all"
+             className="w-16 h-16 mr-2 md:hover:w-32 md:hover:h-32 transition-all"
             />
           </button>
   </div>)
