@@ -345,21 +345,8 @@ const ContactSection = () =>{
   <h2 className="text-2xl md:text-5xl font-bold text-blue-700 mt-2 mb-2 md:mt-5">Contact Me</h2>
   <div>
    <form ref={formRef} onSubmit ={handleSubmit}>
-        <div>
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-            Names
-          </label>
-          <input
-            className="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="name"
-            name="names"
-            placeholder="Names"
-            value={form.names}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+   <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2">
             Email
           </label>
           <input
@@ -373,7 +360,20 @@ const ContactSection = () =>{
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
+          <label className="block text-gray-700 text-sm font-bold mb-2">
+            Names
+          </label>
+          <input
+            className="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="name"
+            name="names"
+            placeholder="Names"
+            value={form.names}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2">
             Phone Number
           </label>
           <input
@@ -387,7 +387,7 @@ const ContactSection = () =>{
           />
         </div>
         <div className="mb-6">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+          <label className="block text-gray-700 text-sm font-bold mb-2">
             Message
           </label>
           <textarea
