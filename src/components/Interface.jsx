@@ -345,7 +345,7 @@ const ContactSection = () =>{
   <h2 className="text-2xl md:text-5xl font-bold text-blue-700 mt-2 mb-2 md:mt-5">Contact Me</h2>
   <div>
    <form ref={formRef} onSubmit ={handleSubmit}>
-        <div className="mb-4">
+        <div>
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
             Names
           </label>
