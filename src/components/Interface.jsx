@@ -403,7 +403,7 @@ const ContactSection = () =>{
 };
 const SocialSection = () =>{
   return(
-  <div className="absolute bottom-5 items-center justify-center">
+  <div className="absolute -z-20 bottom-5 items-center justify-center">
   <button onClick={() => window.open("https://wa.me/250736575839?text=Hi%20I%20need%20a%20Service", "_blank")}>
             <img src={"/textures/whatsapp.png"}
              alt="whatsapp"
