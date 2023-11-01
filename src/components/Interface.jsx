@@ -347,7 +347,7 @@ const ContactSection = () =>{
    <form ref={formRef} onSubmit ={handleSubmit}>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-            Name
+            Names
           </label>
           <input
             className="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
