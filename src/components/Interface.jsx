@@ -328,19 +328,7 @@ const ContactSection = () =>{
 
   return(
  <Section>
-  <motion.div className="mt-8 p-2 md:p-4 rounded-md bg-white bg-opacity-50 w-96 md:w-1/3 max-w-full"
-      initial={{
-        opacity: 0,
-        y:50,
-      }}
-      whileInView={{
-        opacity: 1,
-        y:0,
-        transition:{
-          duration: 1,
-          delay: 0.6,
-        }
-      }}
+  <div className="mt-4 md:mt-8 p-2 md:p-4 rounded-md bg-white bg-opacity-50 w-96 md:w-1/3 max-w-full"
     >
   <h2 className="text-2xl md:text-5xl font-bold text-blue-700 mt-2 mb-2 md:mt-5">Contact Me</h2>
   <div>
@@ -409,7 +397,7 @@ const ContactSection = () =>{
         </div>
       </form>
     </div>
-  </motion.div>
+  </div>
  </Section>
  )
 };
