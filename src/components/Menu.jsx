@@ -27,11 +27,18 @@ export const Menu = (props) => {
 
 const MenuButton = (props) => {
   const {label, onClick} = props;
+
+  const handleClick =()=>{
+    setMenuOpened(!menuOpened);
+    onClick ={onClick}
+  }
+
   return (
     <button
-      onClick ={onClick}
+      onClick ={handleClick}
       className="text-2xl font-bold cursor-pointer hover:text-blue-500 text-blue-700 transition-colors">
       {label}
     </button>
   );
 };
+

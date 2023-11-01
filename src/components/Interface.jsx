@@ -241,7 +241,7 @@ const ProjectsSection = (props) => {
              delay: 0.6,
         }
       }}
-      className="flex w-full h-full gap-2 relative top-64 md:top-36 items-center justify-center">
+      className="flex w-full h-full gap-2 relative top-auto md:top-36 items-center justify-center mb-4">
         <button
           className="bg-white p-2 rounded-md font-bold md:hover:text-blue-400 transition-colors text-blue-700"
           onClick={previousProject}
@@ -335,7 +335,7 @@ const ContactSection = () =>{
    <form ref={formRef} onSubmit ={handleSubmit}>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">
-            Names
+            Full Name
           </label>
           <input
             className="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -403,7 +403,7 @@ const ContactSection = () =>{
 };
 const SocialSection = () =>{
   return(
-  <div className="absolute -z-20 bottom-5 items-center justify-center">
+  <div className="absolute bottom-5 items-center justify-center">
   <button onClick={() => window.open("https://wa.me/250736575839?text=Hi%20I%20need%20a%20Service", "_blank")}>
             <img src={"/textures/whatsapp.png"}
              alt="whatsapp"
