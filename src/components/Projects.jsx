@@ -26,7 +26,7 @@ export const projects = [
     url: "https://eloxpro.itch.io/3d-runner-demo",
   },
   {
-    title: 'OnPost Platform Home',
+    title: 'OnPost Platform',
     description: 'A Simple Clone Of Instagram Home Page',
     image: 'projects/onpost.png',
     url: "https://onpost.netlify.app/",
